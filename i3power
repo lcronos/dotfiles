@@ -1,0 +1,39 @@
+#!/bin/bash
+lock() {
+    #i3lock -i /home/kronos/Pictures/gentoo-wallpaper.png -e
+    /home/kronos/.bin/scripts/lock.sh /home/kronos/Pictures/gentoo-icon.png
+}
+
+shutdn() {
+	dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
+}
+
+rboot() {
+        dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
+}
+
+case "$1" in
+    lock)
+        lock
+        ;;
+    logout)
+	[ $(echo -e 'No\nYes' | dmenu -sb '#E57807' -i -fn 'Ubuntu Mono:pixelsize=15' -p "You pressed the exit shortcut.  Do you really want to exit i3?") = "Yes" ] && i3-msg exit
+        ;;
+    suspend)
+        lock && sudo pm-suspend #dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+        ;;
+    hibernate)
+        dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Hibernate
+        ;;
+    reboot)
+	[ $(echo -e 'No\nYes' | dmenu -sb '#E57807' -i -fn 'Ubuntu Mono:pixelsize=15' -p "Are you sure you want to reboot?") = "Yes" ] && rboot
+        ;;
+    shutdown)
+	[ $(echo -e 'No\nYes' | dmenu -sb '#E57807' -i -fn 'Ubuntu Mono:pixelsize=15' -p "Are you sure you want to shutdown?") = "Yes" ] && shutdn
+        ;;
+    *)
+        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        exit 2
+esac
+
+exit 0

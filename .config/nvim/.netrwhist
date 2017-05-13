@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/kronos/Scripts'
+let g:netrw_dirhist_2='/home/kronos/School/cs4000/hw4'
+let g:netrw_dirhist_3='/home/kronos/.config/nvim'
+let g:netrw_dirhist_4='/home/kronos'
+let g:netrw_dirhist_5='/home/kronos/Documents'
+let g:netrw_dirhist_6='/home/kronos'
+let g:netrw_dirhist_7='/home/kronos/Gentoo-Scripts'
+let g:netrw_dirhist_8='/usr/include/hwloc'
+let g:netrw_dirhist_9='/home/kronos/School/cs3200/hw/hw5'
