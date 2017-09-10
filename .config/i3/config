@@ -127,6 +127,17 @@ set $workspace8 8: 
 set $workspace9 9: 
 set $workspace10 10: 
 
+#set $workspace1 1
+#set $workspace2 2
+#set $workspace3 3
+#set $workspace4 4
+#set $workspace5 5
+#set $workspace6 6
+#set $workspace7 7
+#set $workspace8 8
+#set $workspace9 9
+#set $workspace10 10
+
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
@@ -197,7 +208,7 @@ mode "Application Launcher"
         bindsym Shift+q exec QT_QPA_PLATFORMTHEME=KDE qupzilla; mode "default"
 	bindsym q exec QT_QPA_PLATFORMTHEME=KDE qutebrowser; mode "default"
 	bindsym d exec QT_QPA_PLATFORMTHEME=KDE dolphin; mode "default"
-	bindsym f exec firefox-bin; mode "default"
+	bindsym f exec firefox; mode "default"
 	bindsym v exec QT_QPA_PLATFORMTHEME=KDE qvim; mode "default"
         bindsym Shift+v exec VirtualBox; mode "default"
 	bindsym e exec emacs; mode "default"
@@ -227,7 +238,7 @@ mode "Power Management"
 # Volume Control
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
-bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle
+bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Brightness Control
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
@@ -254,14 +265,12 @@ bar {
         urgent_workspace  	$orange		$orange		$dark
     }
     position top
-
 }
 
-# exec nitrogen --restore
 exec_always --no-startup-id sh ~/.fehbg &
 exec --no-startup-id redshift-gtk
-exec --no-startup-id nm-applet
+exec --no-startup-id connman-gtk
 exec --no-startup-id compton
 exec --no-startup-id i3-msg 'exec urxvt; exec urxvt'
 exec --no-startup-id xautolock -time 10 -locker "~/.bin/scripts/lock.sh ~/Pictures/gentoo-icon.png"
-exec QT_QPA_PLATFORMTHEME=KDE qutebrowser
+exec --no-startup-id qutebrowser
