@@ -1,0 +1,49 @@
+[Default Item Styles - Schema Solarized (dark)]
+Error=ffda4453,ffda4453,,,,,-,-,,---
+
+[Highlighting None - Schema Normal]
+Normal Text=0,,,,,,,,,,---
+
+[Highlighting None - Schema Solarized (dark)]
+Normal Text=0,,,,,,,,,,---
+
+[Highlighting Python - Schema Solarized (dark)]
+Alerts:Alert Level 1=28,ffea9790,ffea9790,,,,,ff441d19,,,---
+Alerts:Alert Level 2=28,ffdfa832,ffdfa832,,,,,ff441d19,,,---
+Alerts:Alert Level 3=28,ff81ca2d,ff81ca2d,,,,,,,,---
+Alerts:Normal Text=0,,,,,,,,,,---
+Alerts:Region Marker=25,,,,,,,,,,---
+Alerts_indent:Normal Text=0,,,,,,,,,,---
+Modelines:Comment=21,,,,,,,,,,---
+Modelines:Keyword=23,,,,,,,,,,---
+Modelines:Number=17,,,,,,,,,,---
+Modelines:Option OFF=29,,,,,,,,,,---
+Modelines:Option ON=29,,,,,,,,,,---
+Modelines:String=12,,,,,,,,,,---
+Modelines:Value=29,,,,,,,,,,---
+Modelines:Variable=24,,,,,,,,,,---
+Python:Builtin Function=6,,,,,,,,,,---
+Python:Comment=21,,,,,,,,,,---
+Python:Complex=29,,,,,,,,,,---
+Python:Decorator=9,,,,,,,,,,---
+Python:Definition Keyword=1,,,,,,,,,,---
+Python:Error=30,,,,,,,,,,---
+Python:Exceptions=8,,,,,,,,,,---
+Python:Extensions=7,,,,,,,,,,---
+Python:F-String=14,,,,,,,,,,---
+Python:Float=19,,,,,,,,,,---
+Python:Flow Control Keyword=4,,,,,,,,,,---
+Python:Hex=18,,,,,,,,,,---
+Python:Import=15,,,,,,,,,,---
+Python:Int=17,,,,,,,,,,---
+Python:Normal Text=0,,,,,,,,,,---
+Python:Octal=18,,,,,,,,,,---
+Python:Operator=5,,,,,,,,,,---
+Python:Operator Keyword=1,,,,,,,,,,---
+Python:Overloaders=2,,,,,,,,,,---
+Python:Raw F-String=13,,,,,,,,,,---
+Python:Raw String=13,,,,,,,,,,---
+Python:Special Variable=3,,,,,,,,,,---
+Python:String=12,,,,,,,,,,---
+Python:String Char=10,,,,,,,,,,---
+Python:String Substitution=11,,,,,,,,,,---

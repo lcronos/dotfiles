@@ -1,0 +1,20 @@
+[KFileDialog Settings]
+Height 768=480
+Recent Files[$e]=bootchart.png,file:$HOME/bootchart.png
+Width 1366=768
+
+[MainWindow]
+Height 768=768
+State=AAAA/wAAAAD9AAAAAAAABVIAAAKYAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1366=1366
+
+[Recent Files]
+File1[$e]=$HOME/bootchart.png
+Name1[$e]=bootchart.png
+
+[SideBar-FullScreenMode]
+IsVisible=false
+
+[SideBar-ViewMode]
+IsVisible=true

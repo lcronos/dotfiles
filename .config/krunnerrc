@@ -1,0 +1,5 @@
+[General]
+history=kstart5 plasmashell,killall plasmashell && kstart plasmashell,,kq,net,kcalc,plasmashell,firefox,yakuake,ur
+
+[PlasmaRunnerManager]
+LaunchCounts=1 shell_killall plasmashell && kstart plasmashell,2 services_org.kde.yakuake.desktop,1 services_urxvt-rxvt-unicode.desktop,1 services_nic.desktop,1 shell_kstart5 plasmashell

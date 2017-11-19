@@ -1,0 +1,13 @@
+[General]
+lastSaveAsLocation=file:///home/kronos/Pictures/
+
+[GuiConfig]
+captureModeIndex=2
+includeDecorations=true
+includePointer=true
+lastUsedSaveMode=2
+window-position=50,50
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/login-verification.png,file:$HOME/Pictures/login-verification.png
+Recent URLs[$e]=file:$HOME/Pictures/

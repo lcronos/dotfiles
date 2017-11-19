@@ -31,18 +31,41 @@ font pango:ubuntu 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+exec --no-startup-id ~/.bin/scripts/color-correction.sh
+
 # colors
-set $black	#050507
-set $white	#EEEEEE
-set $gray	#888888
-set $darkgray	#222222
-set $green 	#799F26
-set $blue	#4D73AA
-set $purple	#8473A7
-set $red	#B50900
-set $orange	#E57807
-set $cyan	#2AA198
-set $dark	#1A1B26
+
+set $gray	 #424242
+set $black       #212121
+set $darkblack   #000000
+set $red         #fb4934
+set $darkred     #cc241d
+set $green       #b8bb26
+set $darkgreen   #98971a
+set $yellow      #fabd2f
+set $darkyellow  #d79921
+set $blue        #83a598
+set $darkblue    #458588
+set $magenta     #d3869b
+set $darkmagenta #b16286
+set $cyan        #8ec07c
+set $darkcyan    #689d6aba
+set $white       #ebdbb2
+set $darkwhite   #a89984
+set $background  #000000
+set $transparent #0000000a
+
+#set $black	#000000
+#set $white	#FFFFFF
+#set $gray	#555555
+#set $darkgray	#343434
+#set $green 	#799F26
+#set $blue	#4D73AA
+#set $purple	#8473A7
+#set $red	#B50900
+#set $orange	#E57807
+#set $cyan	#2AA198
+#set $dark	#1A1B26
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
@@ -105,19 +128,19 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-#class                  border		backgrd		text	indicator
-client.focused		$black	  	$black	 	$white	$dark
-client.unfocused	$darkgray	$darkgray	$gray	$white
-client.focused_inactive	$darkgray	$darkgray  	$gray	$dark
-client.urgent		$orange 	$orange		$dark	$white
-
+#class                  border		backgrd		text		indicator
+client.focused          $darkcyan	$darkcyan	$white		$gray
+client.unfocused        $transparent	$transparent	$black		$black
+client.focused_inactive $transparent	$transparent	$black		$black
+client.urgent           $red		$red		$black		$black	
+client.background       $black
 
 # focus the child container
 #bindsym $mod+d focus child
 
 # workspaces
 set $workspace1 1: 
-set $workspace2 2: 
+set $workspace2 2: 
 set $workspace3 3: 
 set $workspace4 4: 
 set $workspace5 5: 
@@ -150,9 +173,18 @@ bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
-assign [class="Firefox"] $workspace2
 assign [class="qutebrowser"] $workspace2
-assign [class="Google Play Music Desktop Player"] $workspace3
+assign [class="Vivaldi-stable"] $workspace2
+
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move position center
+for_window [instance="dropdown"] move scratchpad
+exec --no-startup-id urxvt -name dropdown
+
+bindsym Control+grave [instance="dropdown"] scratchpad show; move position center
+bindsym Control+Shift+grave exec --no-startup-id urxvt -name dropdown
+
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -208,8 +240,7 @@ mode "Application Launcher"
         bindsym Shift+q exec QT_QPA_PLATFORMTHEME=KDE qupzilla; mode "default"
 	bindsym q exec QT_QPA_PLATFORMTHEME=KDE qutebrowser; mode "default"
 	bindsym d exec QT_QPA_PLATFORMTHEME=KDE dolphin; mode "default"
-	bindsym f exec firefox; mode "default"
-	bindsym v exec QT_QPA_PLATFORMTHEME=KDE qvim; mode "default"
+	bindsym v exec vivaldi; mode "default"
         bindsym Shift+v exec VirtualBox; mode "default"
 	bindsym e exec emacs; mode "default"
 	bindsym k exec QT_QPA_PLATFORMTHEME=KDE kate; mode "default"
@@ -250,27 +281,30 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrevious exec playerctl previous
 
+# Load color correction
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+	i3bar_command	i3bar -t
+        status_command i3status 
 	colors {
 			statusline	$white
-			background	$black
+			background	$transparent
 
         # Colors		border		backgr		text
-	focused_workspace	$gray 		$gray		$black
-        active_workspace	$dark	 	$dark	 	$gray
-        inactive_workspace	$dark 		$dark		$gray
-        urgent_workspace  	$orange		$orange		$dark
+	focused_workspace	$transparent	$transparent	$darkblack
+        active_workspace	$transparent 	$transparent 	$darkwhite
+        inactive_workspace	$transparent 	$transparent 	$darkwhite
+        urgent_workspace  	$red		$red		$transparent
+	binding_mode		$transparent	$transparent	$blue
     }
     position top
 }
 
-exec_always --no-startup-id sh ~/.fehbg &
-exec --no-startup-id redshift-gtk
-exec --no-startup-id connman-gtk
+exec --no-startup-id nm-applet
 exec --no-startup-id compton
 exec --no-startup-id i3-msg 'exec urxvt; exec urxvt'
-exec --no-startup-id xautolock -time 10 -locker "~/.bin/scripts/lock.sh ~/Pictures/gentoo-icon.png"
-exec --no-startup-id qutebrowser
+#exec --no-startup-id qutebrowser
+#exec --no-startup-id feh --bg-fill /usr/share/wallpapers/Next/contents/images/1366x768.png
+exec_always --no-startup-id ~/.local/bin/wal -c -i /usr/share/wallpapers/Next/contents/images/1366x768.png

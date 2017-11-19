@@ -1,0 +1,5 @@
+open_with 
+q
+open_with l
+search /etc/splash
+search splash

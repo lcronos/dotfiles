@@ -1,0 +1,203 @@
+[11/08/17, 18:46:32:548] info: ╔═════════════════════════════════════════════════════════════════════════╗
+[11/08/17, 18:46:32:550] info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/08/17, 18:46:32:539      ║
+[11/08/17, 18:46:32:551] info: ╚═════════════════════════════════════════════════════════════════════════╝
+[11/08/17, 18:46:32:810] info: Initializing local storage instance at path: /home/kronos/.config/Slack/local-settings.json
+[11/08/17, 18:46:33:403] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7X26V3D1', assignedId: 1 }
+[11/08/17, 18:46:33:406] info: WebView LifeCycle: New webview component created for T7X26V3D1:1', with state 'unloaded'
+[11/08/17, 18:46:33:408] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7WJRAJ1X', assignedId: 2 }
+[11/08/17, 18:46:33:410] info: WebView LifeCycle: New webview component created for T7WJRAJ1X:2', with state 'unloaded'
+[11/08/17, 18:46:33:417] info: TeamsDisplay: T7X26V3D1 usage: 0
+[11/08/17, 18:46:33:417] info: TeamsDisplay: T7WJRAJ1X usage: 0
+[11/08/17, 18:46:33:420] info: Store: SET_NETWORK_STATUS online
+[11/08/17, 18:46:33:547] info: Checking network connection to Slack...
+[11/08/17, 18:46:33:557] info: Store: APP_STARTED
+{ updated: { events: { eventId: 1 } } }
+[11/08/17, 18:46:39:243] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 18:46:42:115] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7WEPD5KJ' } } }
+[11/08/17, 18:46:42:202] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/08/17, 18:46:43:041] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'page-loaded',
+  data: null }
+[11/08/17, 18:46:43:045] info: Store: page-loaded
+[11/08/17, 18:46:43:231] info: TeamView: Bugsnag user: U7Y0WC3QE
+[11/08/17, 18:46:43:246] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'page-loaded',
+  data: null }
+[11/08/17, 18:46:43:248] info: Store: page-loaded
+[11/08/17, 18:46:43:683] info: Webapp finished loading
+[11/08/17, 18:46:43:687] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'webapp-loaded',
+  data: null }
+[11/08/17, 18:46:43:693] info: Store: webapp-loaded
+[11/08/17, 18:46:43:883] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7WJRAJ1X: [Object] } } }
+[11/08/17, 18:46:44:149] info: Webapp finished loading
+[11/08/17, 18:46:44:154] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'webapp-loaded',
+  data: null }
+[11/08/17, 18:46:44:158] info: Store: webapp-loaded
+[11/08/17, 18:46:44:378] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7X26V3D1: [Object] } } }
+[11/08/17, 18:46:58:931] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 18:47:01:186] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:47:02:262] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 18:47:06:472] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 18:47:06:489] info: TeamsDisplay: Team T7X26V3D1 was active for 33070ms
+[11/08/17, 18:47:06:559] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:47:22:031] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 18:47:22:037] info: TeamsDisplay: Team T7WJRAJ1X was active for 15548ms
+[11/08/17, 18:47:22:075] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:47:48:015] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 18:49:35:713] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:49:36:834] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 18:50:39:574] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 18:50:39:579] info: TeamsDisplay: Team T7X26V3D1 was active for 197542ms
+[11/08/17, 18:50:39:598] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:50:41:221] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 18:50:41:227] info: TeamsDisplay: Team T7WJRAJ1X was active for 1648ms
+[11/08/17, 18:50:41:244] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:51:15:212] info: Store: SELECT_TEAM T7WJRAJ1X
+[11/08/17, 18:51:15:226] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 18:51:15:231] info: TeamsDisplay: Team T7X26V3D1 was active for 34003ms
+[11/08/17, 18:51:16:110] info: Store: SELECT_TEAM T7X26V3D1
+[11/08/17, 18:51:16:123] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 18:51:16:127] info: TeamsDisplay: Team T7WJRAJ1X was active for 897ms
+[11/08/17, 18:51:30:280] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:51:30:523] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:51:31:148] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:51:31:320] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:51:31:503] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 18:51:33:733] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7WEKHP24' } } }
+[11/08/17, 18:51:35:827] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7X6LS1FU' } } }
+[11/08/17, 18:51:37:272] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7WEKHP24' } } }
+[11/08/17, 18:51:38:613] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7WNK4R89' } } }
+[11/08/17, 18:51:39:427] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7WESPU9E' } } }
+[11/08/17, 18:51:43:021] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/08/17, 18:51:43:638] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X4EG7DY' } } }
+[11/08/17, 18:52:12:201] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/08/17, 19:01:34:551] info: Store: NEW_NOTIFICATION
+{ updated: { notifications: { notifications: [Object], newNotification: [Object] } },
+  deleted: {} }
+[11/08/17, 19:01:34:556] info: Creating new window notification.
+[11/08/17, 19:01:34:558] info: Store: NEW_NOTIFICATION
+{ updated: { notifications: { notifications: [Object], newNotification: [Object] } },
+  deleted: {} }
+[11/08/17, 19:01:34:562] info: Creating new window notification.
+[11/08/17, 19:01:45:131] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 19:01:45:136] info: TeamsDisplay: Team T7X26V3D1 was active for 629009ms
+[11/08/17, 19:01:45:160] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:01:48:494] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7X2AR9D1' } } }
+[11/08/17, 19:02:00:137] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7X2AR9KM' } } }
+[11/08/17, 19:02:02:354] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7X2AR9D1' } } }
+[11/08/17, 19:02:04:534] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7X7SE811' } } }
+[11/08/17, 19:04:12:875] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 19:04:12:878] info: TeamsDisplay: Team T7WJRAJ1X was active for 147742ms
+[11/08/17, 19:04:12:898] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:04:15:181] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 19:04:15:188] info: TeamsDisplay: Team T7X26V3D1 was active for 2310ms
+[11/08/17, 19:04:15:205] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:04:17:280] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7WEPD5KJ' } } }
+[11/08/17, 19:04:18:333] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 19:04:18:338] info: TeamsDisplay: Team T7WJRAJ1X was active for 3149ms
+[11/08/17, 19:04:18:373] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:08:48:799] info: Store: SELECT_TEAM T7WJRAJ1X
+[11/08/17, 19:08:48:820] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 19:08:48:825] info: TeamsDisplay: Team T7X26V3D1 was active for 270488ms
+[11/08/17, 19:10:30:641] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 19:10:30:644] info: TeamsDisplay: Team T7WJRAJ1X was active for 101819ms
+[11/08/17, 19:10:30:666] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:11:01:411] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 19:16:43:173] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:16:44:258] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/08/17, 19:27:15:770] info: Store: SELECT_TEAM T7WJRAJ1X
+[11/08/17, 19:27:15:799] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 19:27:15:803] info: TeamsDisplay: Team T7X26V3D1 was active for 1005159ms
+[11/08/17, 19:27:17:205] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 19:27:17:211] info: TeamsDisplay: Team T7WJRAJ1X was active for 1408ms
+[11/08/17, 19:27:17:253] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:27:17:610] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 19:27:17:613] info: TeamsDisplay: Team T7X26V3D1 was active for 402ms
+[11/08/17, 19:27:17:644] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:27:17:988] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 19:27:17:992] info: TeamsDisplay: Team T7WJRAJ1X was active for 379ms
+[11/08/17, 19:27:18:008] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:27:18:497] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7WJRAJ1X' } } }
+[11/08/17, 19:27:18:501] info: TeamsDisplay: Team T7X26V3D1 was active for 509ms
+[11/08/17, 19:27:18:527] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:27:37:874] info: Store: SELECT_TEAM
+{ updated: { appTeams: { selectedTeamId: 'T7X26V3D1' } } }
+[11/08/17, 19:27:37:878] info: TeamsDisplay: Team T7WJRAJ1X was active for 19377ms
+[11/08/17, 19:27:37:891] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/08/17, 19:27:41:710] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }

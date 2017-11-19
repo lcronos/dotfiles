@@ -1,0 +1,53 @@
+[11/17/17, 10:13:49:705] info: ╔═════════════════════════════════════════════════════════════════════════╗
+[11/17/17, 10:13:49:707] info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/17/17, 10:13:49:696      ║
+[11/17/17, 10:13:49:708] info: ╚═════════════════════════════════════════════════════════════════════════╝
+[11/17/17, 10:13:49:967] info: Initializing local storage instance at path: /home/kronos/.config/Slack/local-settings.json
+[11/17/17, 10:13:50:561] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7X26V3D1', assignedId: 1 }
+[11/17/17, 10:13:50:563] info: WebView LifeCycle: New webview component created for T7X26V3D1:1', with state 'unloaded'
+[11/17/17, 10:13:50:566] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7WJRAJ1X', assignedId: 2 }
+[11/17/17, 10:13:50:567] info: WebView LifeCycle: New webview component created for T7WJRAJ1X:2', with state 'unloaded'
+[11/17/17, 10:13:50:573] info: TeamsDisplay: T7X26V3D1 usage: 50734425
+[11/17/17, 10:13:50:574] info: TeamsDisplay: T7WJRAJ1X usage: 0
+[11/17/17, 10:13:50:577] info: Store: SET_NETWORK_STATUS online
+[11/17/17, 10:13:50:610] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/17/17, 10:13:50:666] info: Store: APP_STARTED
+{ updated: { events: { eventId: 2 } } }
+[11/17/17, 10:13:50:681] info: Checking network connection to Slack...
+[11/17/17, 10:13:57:386] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7WEPD5KJ' } } }
+[11/17/17, 10:13:57:404] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/17/17, 10:13:58:327] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'page-loaded',
+  data: null }
+[11/17/17, 10:13:58:329] info: Store: page-loaded
+[11/17/17, 10:13:58:715] info: Webapp finished loading
+[11/17/17, 10:13:58:718] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'webapp-loaded',
+  data: null }
+[11/17/17, 10:13:58:721] info: Store: webapp-loaded
+[11/17/17, 10:13:58:815] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7WJRAJ1X: [Object] } } }
+[11/17/17, 10:13:58:881] info: TeamView: Bugsnag user: U7Y0WC3QE
+[11/17/17, 10:13:58:892] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'page-loaded',
+  data: null }
+[11/17/17, 10:13:58:894] info: Store: page-loaded
+[11/17/17, 10:13:59:754] info: Webapp finished loading
+[11/17/17, 10:13:59:756] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'webapp-loaded',
+  data: null }
+[11/17/17, 10:13:59:757] info: Store: webapp-loaded
+[11/17/17, 10:13:59:920] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7X26V3D1: [Object] } } }

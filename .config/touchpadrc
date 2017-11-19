@@ -1,0 +1,10 @@
+[autodisable]
+DisableOnKeyboardActivity=false
+
+[parameters]
+CircScrollDelta=5.73
+HorizScrollDelta=2.7
+MaxTapMove=3.4
+PalmDetect=true
+Tapping=false
+VertScrollDelta=1.9

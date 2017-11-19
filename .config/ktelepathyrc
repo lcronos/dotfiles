@@ -1,0 +1,22 @@
+[File Transfers]
+alwaysAsk=false
+autoAccept=false
+downloadDirectory=/home/kronos/Downloads
+
+[KDED]
+autoAwayEnabled=true
+autoConnect=enabled
+autoXAEnabled=true
+awayAfter=5
+awayMessage=
+nowPlayingEnabled=false
+nowPlayingText=Now listening to %title by %artist from album %album
+screenSaverAwayEnabled=true
+screenSaverAwayMessage=
+xaAfter=15
+xaMessage=
+
+[LastPresence]
+PresenceMessage=
+PresenceStatus=busy
+PresenceType=6

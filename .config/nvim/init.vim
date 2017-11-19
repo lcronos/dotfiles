@@ -81,8 +81,8 @@ inoremap '' ''
 inoremap '; '
 
 " autoindent
-set expandtab
-set shiftwidth=5
-set smarttab
+" set expandtab
+" set shiftwidth=5
+" set smarttab
 set autoindent
 set smartindent

@@ -1,0 +1,19 @@
+info: ╔═════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/08/17, 13:57:26:406      ║
+info: ╚═════════════════════════════════════════════════════════════════════════╝
+info: Nov-8 13:57:31.991 [BOOT] booted! pri:0 version:1510166927 start_ms:1510167449646 (2344ms ago)
+info: 2017/11/8 13:57:32.100  no TS.client on page:https://slack.com/signin
+info: 2017/11/8 13:57:32.271  running without a user
+warn: Nov-8 13:57:41.319 Logging clicks with data-clog-click requires a data-clog-event attribute
+info: Nov-8 13:57:44.604 [BOOT] booted! pri:0 version:1510166927 start_ms:1510167462743 (1861ms ago)
+info: 2017/11/8 13:57:44.612  no TS.client on page:https://tbd-oats.slack.com/
+info: 2017/11/8 13:57:44.978  running without a user
+info: ╔═════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/08/17, 13:59:13:380      ║
+info: ╚═════════════════════════════════════════════════════════════════════════╝
+info: Nov-8 13:59:16.272 [BOOT] booted! pri:0 version:1510167301 start_ms:1510167554533 (1739ms ago)
+info: 2017/11/8 13:59:16.280  no TS.client on page:https://slack.com/signin
+info: 2017/11/8 13:59:16.686  running without a user
+info: Nov-8 13:59:22.527 [BOOT] booted! pri:0 version:1510167301 start_ms:1510167560654 (1872ms ago)
+info: 2017/11/8 13:59:22.536  no TS.client on page:https://oats-all.slack.com/
+info: 2017/11/8 13:59:22.760  running without a user
