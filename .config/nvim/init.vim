@@ -82,14 +82,8 @@ inoremap '; '
 
 " autoindent
 " set expandtab
-<<<<<<< HEAD
 set tabstop=4
 " set autoindent
-=======
-" set shiftwidth=5
-" set smarttab
-set autoindent
->>>>>>> 4eab5e4f062f4b93d29cad6c4dc3d9ba7be0cdb6
 set smartindent
 set shiftwidth=4
 set softtabstop=4
