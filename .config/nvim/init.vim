@@ -62,12 +62,12 @@ inoremap {{ {
 inoremap {} {}
 
 inoremap ( ()<Left>
-inoremap (<CR> (<CR><BS>)<Esc>O
+inoremap (<CR> (<CR>)<Esc>O
 inoremap (( (
 inoremap () ()
 
 inoremap [ []<Left>
-inoremap [<CR> [<CR><BS>]<Esc>O
+inoremap [<CR> [<CR>]<Esc>O
 inoremap [[ [
 inoremap [] []
 
@@ -81,8 +81,9 @@ inoremap '' ''
 inoremap '; '
 
 " autoindent
-set expandtab
-set shiftwidth=5
-set smarttab
-set autoindent
+" set expandtab
+set tabstop=4
+" set autoindent
 set smartindent
+set shiftwidth=4
+set softtabstop=4
