@@ -1,0 +1,40 @@
+Type: Warning Num: 0
+Date: 2017.08.01 18:58:08 742
+Sender: int main( int argc, char *argv[] )
+Message: Fisrt Start Wizard Canceled!
+
+Type: Warning Num: 1
+Date: 2017.08.01 18:58:11 076
+Sender: bool Update_Emulators_List()
+Message: No emulators found in "/home/kronos/.config/aqemu/"
+
+Type: Warning Num: 2
+Date: 2017.08.01 18:58:11 166
+Sender: bool Update_Emulators_List()
+Message: No emulators found in "/home/kronos/.config/aqemu/"
+
+Type: Error Num: 3
+Date: 2017.08.01 18:58:11 166
+Sender: QList<Emulator> Get_Emulators_List()
+Message: Cannot Update Emulators List
+
+Type: Error Num: 4
+Date: 2017.08.01 18:58:11 166
+Sender: const Emulator &Get_Default_Emulator()
+Message: Emulator Count == 0
+
+Type: Warning Num: 5
+Date: 2017.08.01 18:58:11 166
+Sender: const Emulator &Get_Default_Emulator()
+Message: Cannot Find!
+
+Type: Error Num: 6
+Date: 2017.08.01 18:58:11 166
+Sender: QList<Available_Devices> &Main_Window::Get_Devices_Info( bool *ok )
+Message: Emulator empty!
+
+Type: Warning Num: 8
+Date: 2017.08.01 18:58:11 208
+Sender: Main_Window::Main_Window( QWidget *parent )
+Message: No VM Loaded!
+

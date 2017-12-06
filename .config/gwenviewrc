@@ -1,0 +1,42 @@
+[Crop]
+CropAdvancedSettingsEnabled=true
+
+[General]
+SideBarPage=folders
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/Oats-pictures-temp/login-image-720.jpeg,file:$HOME/Pictures/Oats-pictures-temp/login-image-1440.jpeg,file:$HOME/Pictures/Oats-pictures-temp/blurred-1440.jpeg,file:$HOME/Pictures/Oats-pictures-temp/login-image-768.jpeg,file:$HOME/Pictures/Oats-pictures-temp/login-image-1080.jpeg,file:$HOME/Pictures/Oats-pictures-temp/blurred-768.jpeg,file:$HOME/Pictures/Oats-pictures-temp/blurred-720.jpeg,file:$HOME/Pictures/Oats-pictures-temp/blurred-1080.jpeg
+Recent URLs[$e]=file:$HOME/Pictures/Oats-pictures-temp/
+
+[MainWindow]
+Height 768=715
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABSQAAALCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1366=820
+Window-Maximized 768x1366=true
+
+[Recent Files]
+File1[$e]=/usr/share/pixmaps/gentoo/1280x1024/5074-acqua-emerge-1280x1024.png
+File2[$e]=$HOME/Pictures/Oats-pictures-temp/blurred-720.jpeg
+File3[$e]=$HOME/Pictures/Oats-pictures-temp/blurred-768.jpeg
+File4[$e]=$HOME/Pictures/Oats-pictures-temp/blurred-1080.jpeg
+File5[$e]=$HOME/Pictures/Oats-pictures-temp/blurred-2160.jpeg
+File6[$e]=$HOME/Pictures/Oats-pictures-temp/login-image-2160.jpeg
+File7[$e]=$HOME/Pictures/Oats-pictures-temp/login-image-4140.jpeg
+Name1[$e]=5074-acqua-emerge-1280x1024.png
+Name2[$e]=blurred-720.jpeg
+Name3[$e]=blurred-768.jpeg
+Name4[$e]=blurred-1080.jpeg
+Name5[$e]=blurred-2160.jpeg
+Name6[$e]=login-image-2160.jpeg
+Name7[$e]=login-image-4140.jpeg
+
+[SideBar-BrowseMode]
+IsVisible=false
+
+[SideBar-FullScreenMode]
+IsVisible=false
+
+[SideBar-ViewMode]
+IsVisible=true

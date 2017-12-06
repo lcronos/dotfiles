@@ -1,0 +1,100 @@
+[11/12/17, 11:42:49:165] info: ╔═════════════════════════════════════════════════════════════════════════╗
+[11/12/17, 11:42:49:167] info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/12/17, 11:42:49:157      ║
+[11/12/17, 11:42:49:168] info: ╚═════════════════════════════════════════════════════════════════════════╝
+[11/12/17, 11:42:49:421] info: Initializing local storage instance at path: /home/kronos/.config/Slack/local-settings.json
+[11/12/17, 11:42:50:026] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7X26V3D1', assignedId: 1 }
+[11/12/17, 11:42:50:029] info: WebView LifeCycle: New webview component created for T7X26V3D1:1', with state 'unloaded'
+[11/12/17, 11:42:50:032] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7WJRAJ1X', assignedId: 2 }
+[11/12/17, 11:42:50:033] info: WebView LifeCycle: New webview component created for T7WJRAJ1X:2', with state 'unloaded'
+[11/12/17, 11:42:50:041] info: TeamsDisplay: T7X26V3D1 usage: 36291640
+[11/12/17, 11:42:50:041] info: TeamsDisplay: T7WJRAJ1X usage: 0
+[11/12/17, 11:42:50:044] info: Store: SET_NETWORK_STATUS online
+[11/12/17, 11:42:50:077] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/12/17, 11:42:50:145] info: Store: APP_STARTED
+{ updated: { events: { eventId: 2 } } }
+[11/12/17, 11:42:50:158] info: Checking network connection to Slack...
+[11/12/17, 11:42:56:530] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/12/17, 11:42:56:597] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7WEPD5KJ' } } }
+[11/12/17, 11:42:57:505] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'page-loaded',
+  data: null }
+[11/12/17, 11:42:57:508] info: Store: page-loaded
+[11/12/17, 11:42:57:824] info: TeamView: Bugsnag user: U7Y0WC3QE
+[11/12/17, 11:42:57:845] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'page-loaded',
+  data: null }
+[11/12/17, 11:42:57:849] info: Store: page-loaded
+[11/12/17, 11:42:57:939] info: Webapp finished loading
+[11/12/17, 11:42:57:943] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'webapp-loaded',
+  data: null }
+[11/12/17, 11:42:57:946] info: Store: webapp-loaded
+[11/12/17, 11:42:58:052] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7WJRAJ1X: [Object] } } }
+[11/12/17, 11:42:58:860] info: Webapp finished loading
+[11/12/17, 11:42:58:862] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'webapp-loaded',
+  data: null }
+[11/12/17, 11:42:58:863] info: Store: webapp-loaded
+[11/12/17, 11:42:59:203] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7X26V3D1: [Object] } } }
+[11/12/17, 13:11:39:533] info: Store: NEW_NOTIFICATION
+{ updated: { notifications: { notifications: [Object], newNotification: [Object] } },
+  deleted: {} }
+[11/12/17, 13:11:39:538] info: Creating new window notification.
+[11/12/17, 13:21:14:092] info: Store: SAVE_WINDOW_SETTINGS
+{ updated: { windowFrame: { windowSettings: [Object] } } }
+[11/12/17, 14:00:17:223] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/12/17, 14:00:18:236] info: Store: FOREGROUND_APP
+{ updated: { events: { foregroundApp: [Object] } } }
+[11/12/17, 14:00:22:077] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X4EG7DY' } } }
+[11/12/17, 14:00:22:832] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/12/17, 14:10:47:143] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7WNK4R89' } } }
+[11/12/17, 14:14:15:516] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X4EG7DY' } } }
+[11/12/17, 14:14:16:056] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/12/17, 14:21:00:939] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'D7WNK4R89' } } }
+[11/12/17, 14:27:22:082] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/12/17, 14:43:45:750] info: Store: QUIT_APP
+{ updated: { events: { eventId: 30 } } }
+[11/12/17, 14:43:45:768] info: Store: REMOVE_WINDOW
+{ updated: {} }
+[11/12/17, 14:43:45:791] info: TeamsDisplay: Team T7X26V3D1 was active for 10855748ms
+[11/12/17, 14:43:45:794] info: Store: UPDATE_TEAM_USAGE
+{ T7X26V3D1: 10855748 }
+[11/12/17, 14:43:45:803] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'component-disposed',
+  data: null }
+[11/12/17, 14:43:45:806] info: WebViewLifeCycle: Removing lifecycle object from storage
+{ componentId: 1, id: 'T7X26V3D1' }
+[11/12/17, 14:43:45:809] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'component-disposed',
+  data: null }
+[11/12/17, 14:43:45:811] info: WebViewLifeCycle: Removing lifecycle object from storage
+{ componentId: 2, id: 'T7WJRAJ1X' }
+[11/12/17, 14:43:46:710] info: Store: UPDATE_TEAM_USAGE
+{ updated: { teams: { T7X26V3D1: [Object] } } }

@@ -1,0 +1,27 @@
+[11/08/17, 13:59:34:241] info: ╔═════════════════════════════════════════════════════════════════════════╗
+[11/08/17, 13:59:34:242] info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/08/17, 13:59:34:232      ║
+[11/08/17, 13:59:34:243] info: ╚═════════════════════════════════════════════════════════════════════════╝
+[11/08/17, 13:59:34:415] info: Initializing local storage instance at path: /home/kronos/.config/Slack/local-settings.json
+[11/08/17, 13:59:34:638] info: updateSuspendResume: true
+[11/08/17, 13:59:34:639] warn: updateSpellcheckerLanguage: Tried to update language, but spellchecker not initialized
+[11/08/17, 13:59:37:706] info: Store: SELECT_CHANNEL C7WEPD5KJ
+[11/08/17, 13:59:37:725] info: Store: UPDATE_TEAM_LOCALE
+{ locale: 'en-US', teamId: 'T7WJRAJ1X' }
+[11/08/17, 13:59:37:735] info: Store: UPDATE_TEAM_THEME
+{ theme: 
+   { column_bg: '#4D394B',
+     menu_bg: '#3E313C',
+     active_item: '#4C9689',
+     active_item_text: '#FFFFFF',
+     hover_item: '#3E313C',
+     text_color: '#FFFFFF',
+     active_presence: '#38978D',
+     badge: '#EB4D5C' },
+  teamId: 'T7WJRAJ1X' }
+[11/08/17, 13:59:38:431] info: Store: UPDATE_TEAM_ICONS
+{ icons: false, teamId: 'T7WJRAJ1X' }
+[11/08/17, 13:59:38:527] info: Store: UPDATE_TEAM_LOCALE
+{ locale: 'en-US', teamId: 'T7WJRAJ1X' }
+[11/08/17, 13:59:43:708] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[11/08/17, 13:59:45:894] info: Unloading spellchecker
+[11/08/17, 13:59:53:424] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages

@@ -1,0 +1,70 @@
+[General]
+Config Revision=10
+Days Meta Infos=30
+Last Session=
+Modified Notification=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Startup Session=manual
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/.config/polybar/config,file:$HOME/School/cs4170/project1/evaluate
+Recent URLs[$e]=file:$HOME/School/cs4170/project1/
+
+[KTextEditor::Search]
+Search History=SF,mouse,glass
+
+[KateSQLPlugin]
+SaveConnections=true
+
+[KateSQLPlugin][OutputCustomization][blob]
+backgroundColor=19,19,17
+font=Ubuntu,10,-1,0,50,0,0,0,0,0
+foregroundColor=204,204,204
+
+[KateSQLPlugin][OutputCustomization][bool]
+backgroundColor=19,19,17
+font=Ubuntu,10,-1,0,50,0,0,0,0,0
+foregroundColor=204,204,204
+
+[KateSQLPlugin][OutputCustomization][datetime]
+backgroundColor=19,19,17
+font=Ubuntu,10,-1,0,50,0,0,0,0,0
+foregroundColor=204,204,204
+
+[KateSQLPlugin][OutputCustomization][null]
+backgroundColor=19,19,17
+font=Ubuntu,10,-1,0,50,0,0,0,0,0
+foregroundColor=204,204,204
+
+[KateSQLPlugin][OutputCustomization][number]
+backgroundColor=19,19,17
+font=Ubuntu,10,-1,0,50,0,0,0,0,0
+foregroundColor=204,204,204
+
+[KateSQLPlugin][OutputCustomization][text]
+backgroundColor=19,19,17
+font=Ubuntu,10,-1,0,50,0,0,0,0,0
+foregroundColor=204,204,204
+
+[MainWindow]
+Height 768=467
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABSQAAALCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAKgBTAFEATABDAG8AbgBuAGUAYwB0AGkAbwBuAHMAVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAFABTAFEATABUAG8AbwBsAEIAYQByAQAAAlr/////AAAAAAAAAAAAAAASAGcAZABiAHAAbAB1AGcAaQBuAQAAAq7/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1366=867
+Window-Maximized 2160x3840=true
+Window-Maximized 768x1366=true
+
+[filetree]
+editShade=68,39,58
+listMode=false
+shadingEnabled=true
+showFullPathOnRoots=false
+sortRole=0
+viewShade=59,65,65

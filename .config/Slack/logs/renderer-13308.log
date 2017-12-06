@@ -1,0 +1,74 @@
+[11/17/17, 09:34:21:719] info: ╔═════════════════════════════════════════════════════════════════════════╗
+[11/17/17, 09:34:21:722] info: ║      Slack 2.8.0, linux 4.13.9-ck on x64 at 11/17/17, 09:34:21:705      ║
+[11/17/17, 09:34:21:723] info: ╚═════════════════════════════════════════════════════════════════════════╝
+[11/17/17, 09:34:22:126] info: Initializing local storage instance at path: /home/kronos/.config/Slack/local-settings.json
+[11/17/17, 09:34:23:045] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7X26V3D1', assignedId: 1 }
+[11/17/17, 09:34:23:048] info: WebView LifeCycle: New webview component created for T7X26V3D1:1', with state 'unloaded'
+[11/17/17, 09:34:23:051] info: WebViewLifeCycle: Creating subscribable lifecycle object
+{ objectId: 'T7WJRAJ1X', assignedId: 2 }
+[11/17/17, 09:34:23:052] info: WebView LifeCycle: New webview component created for T7WJRAJ1X:2', with state 'unloaded'
+[11/17/17, 09:34:23:062] info: TeamsDisplay: T7X26V3D1 usage: 50566511
+[11/17/17, 09:34:23:064] info: TeamsDisplay: T7WJRAJ1X usage: 0
+[11/17/17, 09:34:23:069] info: Store: SET_NETWORK_STATUS online
+[11/17/17, 09:34:23:194] info: Store: APP_STARTED
+{ updated: { events: { eventId: 2 } } }
+[11/17/17, 09:34:23:216] info: Checking network connection to Slack...
+[11/17/17, 09:34:30:799] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7X8L7EAZ' } } }
+[11/17/17, 09:34:30:948] info: Store: SELECT_CHANNEL
+{ updated: { appTeams: { selectedChannelId: 'C7WEPD5KJ' } } }
+[11/17/17, 09:34:32:083] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'page-loaded',
+  data: null }
+[11/17/17, 09:34:32:085] info: Store: page-loaded
+[11/17/17, 09:34:32:769] info: Webapp finished loading
+[11/17/17, 09:34:32:774] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'webapp-loaded',
+  data: null }
+[11/17/17, 09:34:32:780] info: Store: webapp-loaded
+[11/17/17, 09:34:32:807] info: TeamView: Bugsnag user: U7Y0WC3QE
+[11/17/17, 09:34:32:869] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'page-loaded',
+  data: null }
+[11/17/17, 09:34:32:872] info: Store: page-loaded
+[11/17/17, 09:34:32:954] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7WJRAJ1X: [Object] } } }
+[11/17/17, 09:34:33:633] info: Webapp finished loading
+[11/17/17, 09:34:33:637] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'webapp-loaded',
+  data: null }
+[11/17/17, 09:34:33:639] info: Store: webapp-loaded
+[11/17/17, 09:34:33:928] info: Store: [7] Store an API token for a team
+{ updated: { tokens: { T7X26V3D1: [Object] } } }
+[11/17/17, 09:37:10:947] info: Store: QUIT_APP
+{ updated: { events: { eventId: 7 } } }
+[11/17/17, 09:37:10:958] info: Store: REMOVE_WINDOW
+{ updated: {} }
+[11/17/17, 09:37:10:980] info: TeamsDisplay: Team T7X26V3D1 was active for 167914ms
+[11/17/17, 09:37:10:982] info: Store: UPDATE_TEAM_USAGE
+{ T7X26V3D1: 167914 }
+[11/17/17, 09:37:10:989] info: WebViewLifeCycle: State changed
+{ id: 'T7X26V3D1',
+  componentId: 1,
+  newState: 'component-disposed',
+  data: null }
+[11/17/17, 09:37:10:993] info: WebViewLifeCycle: Removing lifecycle object from storage
+{ componentId: 1, id: 'T7X26V3D1' }
+[11/17/17, 09:37:10:995] info: WebViewLifeCycle: State changed
+{ id: 'T7WJRAJ1X',
+  componentId: 2,
+  newState: 'component-disposed',
+  data: null }
+[11/17/17, 09:37:10:997] info: WebViewLifeCycle: Removing lifecycle object from storage
+{ componentId: 2, id: 'T7WJRAJ1X' }
+[11/17/17, 09:37:11:056] info: Store: UPDATE_TEAM_USAGE
+{ updated: { teams: { T7X26V3D1: [Object] } } }

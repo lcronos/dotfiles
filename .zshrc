@@ -49,16 +49,15 @@ COMPLETION_WAITING_DOTS="true"
 
 # Default Programs
 #export NMON=cmknt
-export EDITOR="vim"
+export EDITOR="nvim"
 export PAGER="less"
-export BROWSER="qutebrowser"
+export BROWSER="firefox"
 export MOVPLAY="mpv"
 export PICVIEW="feh"
 export SNDPLAY="mpv"
-#export TERMINAL="uxterm"
 export PULSE_LATENCY_MSEC=60
-#export TERM="xterm-256color"
-export TERM="rxvt-unicode-256color"
+export TERM="konsole"
+#export TERM="xterm"
 
 # File Extensions
 for ext in html org php com net no;    do alias -s $ext=$BROWSER; done
@@ -95,10 +94,10 @@ alias ps2='pcsx2'
 
 ## Packages
 alias extract='tar xaf'
-alias gz='tar xzf'
-alias xz='tar xJf'
-alias bz='tar xvjf'
-alias bz2='tar jxvf'
+#alias gz='tar xzf'
+#alias xz='tar xJf'
+#alias bz='tar xvjf'
+#alias bz2='tar jxvf'
 
 ## Gentoo
 #alias find-config='find /etc -iname '._cfg????_*''
@@ -138,10 +137,10 @@ alias ...='cd ...'
 alias ....='cd ....'
 alias .....='cd .....'
 alias k='exit'
-alias te='trash-empty'
-alias tl='trash-list'
-alias del='trash-put'
-alias tr='trash-rm'
+#alias te='trash-empty'
+#alias tl='trash-list'
+#alias del='trash-put'
+#alias tr='trash-rm'
 alias lsTrash='ls ~/.local/share/Trash/files/'
 alias cdTrash='cd ~/.local/share/Trash/files/'
 alias lD='ls ~/Downloads'
