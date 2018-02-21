@@ -2,6 +2,8 @@ autoload -U compinit promptinit
 compinit
 promptinit; prompt gentoo
 
+PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+
 #scratch# Oh-My-Zsh
 ZSH=/home/kronos/.oh-my-zsh
 ZSH_THEME="bira"    #kardan agnoster af-magic bira clean candy gentoo terminalparty
@@ -51,13 +53,14 @@ COMPLETION_WAITING_DOTS="true"
 #export NMON=cmknt
 export EDITOR="nvim"
 export PAGER="less"
-export BROWSER="firefox"
+export BROWSER="vivaldi"
 export MOVPLAY="mpv"
 export PICVIEW="feh"
 export SNDPLAY="mpv"
+#export TERMINAL="uxterm"
 export PULSE_LATENCY_MSEC=60
-export TERM="konsole"
-#export TERM="xterm"
+#export TERM="xterm-256color"
+#export TERM="konsole"
 
 # File Extensions
 for ext in html org php com net no;    do alias -s $ext=$BROWSER; done
@@ -83,6 +86,7 @@ alias font-check='echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"'
 alias Backup-local='sudo /home/kronos/Scripts/laptop_backup_local.sh'
 
 # SSH
+alias aws='ssh -i ~/School/oats-jenkins-server/jenkinssshpair.pem ec2-user@ec2-13-58-195-3.us-east-2.compute.amazonaws.com'
 alias tesla='ssh tsteinbe@tesla2.cs.ohio.edu'
 alias tesla-X='ssh -X tsteinbe@tesla2.cs.ohio.edu'
 alias L-get='echo "/path/to/host/file ~/path/to/destination" && scp tsteinbe@tesla2.cs.ohio.edu'
@@ -94,10 +98,10 @@ alias ps2='pcsx2'
 
 ## Packages
 alias extract='tar xaf'
-#alias gz='tar xzf'
-#alias xz='tar xJf'
-#alias bz='tar xvjf'
-#alias bz2='tar jxvf'
+alias gz='tar xzf'
+alias xz='tar xJf'
+alias bz='tar xvjf'
+alias bz2='tar jxvf'
 
 ## Gentoo
 #alias find-config='find /etc -iname '._cfg????_*''
@@ -137,10 +141,10 @@ alias ...='cd ...'
 alias ....='cd ....'
 alias .....='cd .....'
 alias k='exit'
-#alias te='trash-empty'
-#alias tl='trash-list'
-#alias del='trash-put'
-#alias tr='trash-rm'
+alias te='trash-empty'
+alias tl='trash-list'
+alias del='trash-put'
+alias tr='trash-rm'
 alias lsTrash='ls ~/.local/share/Trash/files/'
 alias cdTrash='cd ~/.local/share/Trash/files/'
 alias lD='ls ~/Downloads'
@@ -410,5 +414,7 @@ alias cE="nmcli --ask c u 'eduroam'"
 setopt no_share_history
 
 # Fix home and end keys
-bindkey "^[[7~" beginning-of-line
-bindkey "^[[8~" end-of-line
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+bindkey "${terminfo[kich1]}" overwrite-mode
+bindkey "${terminfo[kdch1]}" delete-char
