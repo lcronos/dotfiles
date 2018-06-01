@@ -1,5 +1,0 @@
-[General]
-history=net,kcalc,plasmashell,firefox,yakuake,ur
-
-[PlasmaRunnerManager]
-LaunchCounts=1 services_nic.desktop,2 services_org.kde.yakuake.desktop,1 services_urxvt-rxvt-unicode.desktop
