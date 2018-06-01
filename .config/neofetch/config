@@ -338,9 +338,9 @@ birthday_format="+%a %d %b %Y %l:%M %p"
 # this order: 'title', '@', 'underline', 'subtitle', 'colon', 'info'
 #
 # Example:
-# colors=(distro)      - Text is colored based on Distro colors.
+ colors=(distro)     # - Text is colored based on Distro colors.
 # colors=(4 6 1 8 8 6) - Text is colored in the order above.
-colors=(7 7 7 7 7 15)
+#colors=(7 7 7 7 7 15)
 
 # Text Options
 
@@ -586,7 +586,7 @@ ascii="distro"
 #       Change this to 'arch_old' or 'ubuntu_old' to use the old logos.
 # NOTE: Ubuntu has flavor varients.
 #       Change this to 'Lubuntu', 'Xubuntu', 'Ubuntu-GNOME' or 'Ubuntu-Budgie' to use the flavors.
-ascii_distro="gentoo"
+ascii_distro="void"
 
 # Ascii Colors
 #
@@ -597,7 +597,8 @@ ascii_distro="gentoo"
 # Example:
 # ascii_colors=(distro)      - Ascii is colored based on Distro colors.
 # ascii_colors=(4 6 1 8 8 6) - Ascii is colored using these colors.
-ascii_colors=(8 7) 
+#ascii_colors=(8 7) 
+ascii_colors=(distro)
 
 # Logo size
 # Arch, Crux and Gentoo have a smaller logo
