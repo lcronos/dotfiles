@@ -60,7 +60,7 @@ export SNDPLAY="mpv"
 #export TERMINAL="uxterm"
 export PULSE_LATENCY_MSEC=60
 #export TERM="xterm-256color"
-#export TERM="konsole"
+export TERM="konsole"
 
 # File Extensions
 for ext in html org php com net no;    do alias -s $ext=$BROWSER; done
@@ -86,7 +86,6 @@ alias font-check='echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"'
 alias Backup-local='sudo /home/kronos/Scripts/laptop_backup_local.sh'
 
 # SSH
-alias aws='ssh -i ~/School/oats-jenkins-server/jenkinssshpair.pem ec2-user@ec2-13-58-195-3.us-east-2.compute.amazonaws.com'
 alias tesla='ssh tsteinbe@tesla2.cs.ohio.edu'
 alias tesla-X='ssh -X tsteinbe@tesla2.cs.ohio.edu'
 alias L-get='echo "/path/to/host/file ~/path/to/destination" && scp tsteinbe@tesla2.cs.ohio.edu'
@@ -418,3 +417,9 @@ bindkey "${terminfo[khome]}" beginning-of-line
 bindkey "${terminfo[kend]}" end-of-line
 bindkey "${terminfo[kich1]}" overwrite-mode
 bindkey "${terminfo[kdch1]}" delete-char
+
+# Blur Konsole
+if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|konsole$' ]]; then
+        for wid in $(xdotool search --pid $PPID); do
+            xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
+fi
