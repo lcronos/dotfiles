@@ -80,6 +80,8 @@ inoremap ' ''<Left>
 inoremap '' ''
 inoremap '; '
 
+tnoremap <Esc> <C-\><C-n>
+
 " autoindent
 " set expandtab
 set tabstop=4
@@ -87,3 +89,48 @@ set tabstop=4
 set smartindent
 set shiftwidth=4
 set softtabstop=4
+
+" OCaml Merlin
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
+" NERDTree autostart
+autocmd vimenter * NERDTree
+
+" Airline buffer names
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Language Client for ocaml
+ let g:LanguageClient_serverCommands = {
+	 \ 'ocaml': ['ocaml-language-server', '--stdio'],
+	 \ 'bash' : ['bash-language-server', 'start'],
+	 \ 'sh' : ['bash-language-server', 'start'],
+	 \ 'cpp' : ['cquery', '--log-file=/tmp/cq.log'],
+	 \ 'c' : ['cquery', '--log-file=/tmp/cq.log'],
+     \ 'python' : ['pyls'],
+	 \ 'php' : ['php', '~/vendor/felixfbecker/language-server/bin/php-language-server.php']
+	 \ }
+
+" Mapings for reasonml
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<cr>
+nnoremap <silent> gf :call LanguageClient_textDocument_formatting()<cr>
+nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
+set omnifunc=LanguageClient#complete
+
+call plug#begin()
+Plug 'roxma/nvim-completion-manager'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'vimwiki/vimwiki'
+Plug 'neomake/neomake'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'vim-airline/vim-airline'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+call plug#end()
