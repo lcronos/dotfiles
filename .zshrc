@@ -1,11 +1,15 @@
 umask 022
-autoload -U compinit promptinit
+autoload -U compinit promptinit colors
 compinit
+colors
+setopt correct
 #promptinit; prompt gentoo
 
 #scratch# Oh-My-Zsh
-ZSH=/home/kronos/.oh-my-zsh
-ZSH_THEME="gentoo"    #kardan agnoster af-magic bira clean candy gentoo terminalparty
+ZSH=/usr/share/oh-my-zsh
+ZSH_THEME="agnoster"    #kardan agnoster af-magic bira clean candy gentoo terminalparty
+
+export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color? [No, yes, abort, edit] "
 
 PATH=$PATH:/opt/texlive/2017/bin/x86_64-linux:$HOME/.local/lib/python3.6/site-packages
 
@@ -50,7 +54,7 @@ export PICVIEW="feh"
 export SNDPLAY="mpv"
 #export TERMINAL="uxterm"
 #export TERM="xterm-256color"
-export TERM="konsole"
+#export TERM="konsole"
 
 # File Extensions
 for ext in html org php com net no;    do alias -s $ext=$BROWSER; done
@@ -108,10 +112,11 @@ alias e='nvim'
 ###########################################################
 ########################### ZSH ###########################
 ###########################################################
-plugins=(git archlinux vi-mode themes zsh-completions color-command) # history-substring-search
-source /home/kronos/.oh-my-zsh/oh-my-zsh.sh
+plugins=(git archlinux vi-mode themes) # zsh-completions color-command) # history-substring-search
+source /usr/share/oh-my-zsh/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /home/kronos/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # enable vim mode on commmand line
 bindkey -v
@@ -128,12 +133,14 @@ zle -N zle-keymap-select
 
 
 # Improved History Search
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "$terminfo[kcuu1]" up-line-or-beginning-search
-bindkey "$terminfo[kcud1]" down-line-or-beginning-search
+#autoload -U up-line-or-beginning-search
+#autoload -U down-line-or-beginning-search
+#zle -N up-line-or-beginning-search
+#zle -N down-line-or-beginning-search
+#bindkey "$terminfo[kcuu1]" up-line-or-beginning-search
+#bindkey "$terminfo[kcud1]" down-line-or-beginning-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # add missing vim hotkeys
 # fixes backspace deletion issues
@@ -194,6 +201,10 @@ bindkey "${terminfo[kdch1]}" delete-char
 if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|konsole$' ]]; then
         for wid in $(xdotool search --pid $PPID); do
             xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
+fi
+# Fix Tilix VTE Issue
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
 fi
 # OPAM configuration
 . /home/kronos/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

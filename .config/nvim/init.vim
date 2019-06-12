@@ -91,8 +91,8 @@ set shiftwidth=4
 set softtabstop=4
 
 " OCaml Merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " NERDTree autostart
 autocmd vimenter * NERDTree
@@ -103,6 +103,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Language Client for ocaml
  let g:LanguageClient_serverCommands = {
+     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
 	 \ 'ocaml': ['ocaml-language-server', '--stdio'],
 	 \ 'bash' : ['bash-language-server', 'start'],
 	 \ 'sh' : ['bash-language-server', 'start'],
@@ -119,7 +120,10 @@ nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
 set omnifunc=LanguageClient#complete
 
 call plug#begin()
-Plug 'roxma/nvim-completion-manager'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'vimwiki/vimwiki'
@@ -128,9 +132,16 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+Plug 'junegunn/fzf'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
