@@ -46,7 +46,7 @@ export LANG=en_US.UTF-8
 COMPLETION_WAITING_DOTS="true"
 
 # Default Programs
-export EDITOR="nvim"
+export EDITOR="spacemacs"
 export PAGER="less"
 export BROWSER="firefox"
 
@@ -57,25 +57,12 @@ export BROWSER="firefox"
 # Clear and Screenfetch
 alias clear='clear && neofetch'
 
-# Project
-alias resetPrefixes="sed -i 's/\#PREFIX=\"\"/PREFIX=\"\"/g' *.bash; sed -i 's/PREFIX=\"\/home\/k/\#PREFIX=\"\/home\/k/g' *.bash"
-alias setPrefixes="sed -i 's/PREFIX=\"\"/\#PREFIX=\"\"/g' *.bash; sed -i 's/#PREFIX=\"\/home\/k/PREFIX=\"\/home\/k/g' *.bash"
-alias resetLocalPath="sed -i 's/#local_path\ =\ \"\"/local_path\ =\ \"\"/g' *.py; sed -i 's/local_path\ =\ \"\/home\/k/#local_path\ =\ \"\/home\/k/g' *.py"
-alias setLocalPath="sed -i 's/local_path\ =\ \"\"/#local_path\ =\ \"\"/g' *.py; sed -i 's/#local_path\ =\ \"\/home\/k/local_path\ =\ \"\/home\/k/g' *.py"
-alias toRoot="cd ~/School/cs4561/tbd-oats/"
-alias toTestServer="cd ~/School/cs4561/tbd-oats/testserver/"
-alias resetOats="cd ~/School/cs4561/tbd-oats/database/make_sql; mysql 'OATS' -e 'source droptables.sql; source maketables.sql; source sampledata.sql;'; cd -"
-alias resetOats2="cd ~/School/cs4561/tbd-oats/testserver/opt/database/make_sql; mysql 'OATS2' -e 'source droptables.sql; source maketables.sql; source sampledata.sql;'; cd -"
-
 # Git
 alias GitStatus='git status -u no'
 
 # Fonts
 alias Fonts='fc-cache -vf ~/.fonts'
 alias font-check='echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"'
-
-# Notes
-alias tn='nvim ~/vimwiki/index.wiki'
 
 # SSH
 alias pu2='ssh tsteinbe@pu2.cs.ohio.edu'
@@ -89,7 +76,7 @@ alias XTR='xrdb -merge ~/.Xresources'
 alias eI='nvim ~/.config/i3/config'
 
 ## Zsh Stuff
-alias eZ='nvim ~/.zshrc'
+alias eZ='emacsclient ~/.zshrc'
 alias Z='source ~/.zshrc'
 
 ## Vim Stuff
