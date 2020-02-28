@@ -46,7 +46,7 @@ export LANG=en_US.UTF-8
 COMPLETION_WAITING_DOTS="true"
 
 # Default Programs
-export EDITOR="spacemacs"
+export EDITOR="emacsclient"
 export PAGER="less"
 export BROWSER="firefox"
 
