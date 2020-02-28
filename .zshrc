@@ -6,12 +6,12 @@ setopt correct
 #promptinit; prompt gentoo
 
 #scratch# Oh-My-Zsh
-ZSH=/usr/share/oh-my-zsh
+ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"    #kardan agnoster af-magic bira clean candy gentoo terminalparty
 
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color? [No, yes, abort, edit] "
 
-PATH=$PATH:/opt/texlive/2017/bin/x86_64-linux:$HOME/.local/lib/python3.6/site-packages
+#PATH=$PATH:/opt/texlive/2017/bin/x86_64-linux:$HOME/.local/lib/python3.6/site-packages
 
 #POWERLINE_RIGHT_A="date"
 #POWERLINE_RIGHT_A="exit-status"
@@ -48,20 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Default Programs
 export EDITOR="nvim"
 export PAGER="less"
-export BROWSER="vivaldi"
-export MOVPLAY="mpv"
-export PICVIEW="feh"
-export SNDPLAY="mpv"
-#export TERMINAL="uxterm"
-#export TERM="xterm-256color"
-#export TERM="konsole"
-
-# File Extensions
-for ext in html org php com net no;    do alias -s $ext=$BROWSER; done
-for ext in txt tex PKGBUID;        do alias -s $ext=$EDITOR; done
-for ext in png jpg gif;            do alias -s $ext=$PICVIEW; done
-for ext in mpg wmv avi mkv;        do alias -s $ext=$MOVPLAY; done
-for ext in wav mp3 ogg;            do alias -s $ext=$SNDPLAY; done
+export BROWSER="firefox"
 
 ########################################################
 ######################## ALIASES ####################### 
@@ -112,11 +99,8 @@ alias e='nvim'
 ###########################################################
 ########################### ZSH ###########################
 ###########################################################
-plugins=(git archlinux vi-mode themes) # zsh-completions color-command) # history-substring-search
-source /usr/share/oh-my-zsh/oh-my-zsh.sh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+plugins=(git archlinux vi-mode themes zsh-autosuggestions zsh-syntax-highlighting history-substring-search)
+source $ZSH/oh-my-zsh.sh
 
 # enable vim mode on commmand line
 bindkey -v

@@ -96,6 +96,7 @@ set softtabstop=4
 
 " NERDTree autostart
 autocmd vimenter * NERDTree
+nmap <c-t> :NERDTreeToggle<CR>
 
 " Airline buffer names
 let g:airline#extensions#tabline#enabled = 1
