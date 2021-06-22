@@ -560,13 +560,22 @@ dump.")
   ;; sublimity - smooth-scrolling
   (require 'sublimity)
   (require 'sublimity-scroll)
+  (require 'sublimity-map)
+  (sublimity-mode 1)
+
+  ;; Code minimap using sublimity-map
+  (add-hook 'sublimity-map-setup-hook
+            (lambda ()
+              (sublimity-map-set-delay nil)
+              (setq buffer-face-mode-face '(:family "Monospace"))
+              (buffer-face-mode)))
   (sublimity-mode 1)
 
   ;; Code minimap
-  (require 'minimap)
-  (setq minimap-window-location 'right)
-  (minimap-create)
-  (minimap-mode 1)
+  ;; (require 'minimap)
+  ;; (setq minimap-window-location 'right)
+  ;; (minimap-create)
+  ;; (minimap-mode 1)
 
   ;; Latex with shell-escape
   (with-eval-after-load 'tex
