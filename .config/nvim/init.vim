@@ -7,8 +7,11 @@ set nocompatible
 syntax enable
 filetype plugin on
 
-" Finding Files:
+" Set elixir file extensions
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex set filetype=eelixir
 
+" " Finding Files:
 " Search down into subfolders
 " Provided tab-completion for all file-related tasks
 set path+=**
@@ -25,6 +28,10 @@ set wildmenu
 
 " Create the 'tags' file
 command! MakeTags !ctags -R .
+
+" Allow mouse wheel without clicks
+set mouse=a
+map <LeftMouse> <nop>
 
 " Use ^] to jump to tag under cursor
 " use g^] for ambiguous tags
@@ -55,31 +62,6 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 set number
 
-" Closing braces
-inoremap { {}<Left>
-inoremap {<CR> {<CR><BS>}<Esc>O
-inoremap {{ {
-inoremap {} {}
-
-inoremap ( ()<Left>
-inoremap (<CR> (<CR>)<Esc>O
-inoremap (( (
-inoremap () ()
-
-inoremap [ []<Left>
-inoremap [<CR> [<CR>]<Esc>O
-inoremap [[ [
-inoremap [] []
-
-" Close quotes
-inoremap " ""<Left>
-inoremap "" ""
-inoremap "; "
-
-inoremap ' ''<Left>
-inoremap '' ''
-inoremap '; '
-
 tnoremap <Esc> <C-\><C-n>
 
 " autoindent
@@ -96,49 +78,61 @@ set softtabstop=4
 
 " NERDTree autostart
 autocmd vimenter * NERDTree
-nmap <c-t> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 
 " Airline buffer names
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-" Language Client for ocaml
- let g:LanguageClient_serverCommands = {
-     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
-	 \ 'ocaml': ['ocaml-language-server', '--stdio'],
-	 \ 'bash' : ['bash-language-server', 'start'],
-	 \ 'sh' : ['bash-language-server', 'start'],
-	 \ 'cpp' : ['cquery', '--log-file=/tmp/cq.log'],
-	 \ 'c' : ['cquery', '--log-file=/tmp/cq.log'],
-     \ 'python' : ['pyls'],
-	 \ 'php' : ['php', '~/vendor/felixfbecker/language-server/bin/php-language-server.php']
-	 \ }
+" Language Clients
+"  let g:LanguageClient_serverCommands = {
+" 	 \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+" 	 \ 'bash' : ['bash-language-server', 'start'],
+" 	 \ 'sh' : ['bash-language-server', 'start'],
+" 	 \ 'cpp' : ['clangd'],
+" 	 \ 'c' : ['clangd'],
+"	 \ 'elixir' : ['~/.bin/elixir-ls/language_server.sh']
+"	 \ }
 
-" Mapings for reasonml
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<cr>
-nnoremap <silent> gf :call LanguageClient_textDocument_formatting()<cr>
-nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
-set omnifunc=LanguageClient#complete
+
+" Mappings for reasonml
+" nnoremap <silent> gd :call LanguageClient_textDocument_definition()<cr>
+" nnoremap <silent> gf :call LanguageClient_textDocument_formatting()<cr>
+" nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
+" set omnifunc=LanguageClient#complete
+
+" Mappings for Elixir
+" nnoremap <F3> :call LanguageClient_contextMenu()<CR>
+" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+" nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+" nnoremap <silent> <F4> :call LanguageClient#textDocument_rename()<CR>
 
 call plug#begin()
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
+Plug 'neovim/nvim-lspconfig'
+Plug 'sbdchd/neoformat'
+Plug 'ncm2/ncm2' " Nvim-completion-manager
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'vimwiki/vimwiki'
+Plug 'roxma/nvim-yarp' " Dependency for ncm2
 Plug 'neomake/neomake'
-Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'autozimu/LanguageClient-neovim', {
+"     \ 'branch': 'next',
+"     \ 'do': 'bash install.sh',
+"     \ }
 Plug 'junegunn/fzf'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'elixir-lang/vim-elixir'
+Plug 'whonore/Coqtail'
+Plug 'machakann/vim-sandwich'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'arcticicestudio/nord-vim'
+Plug 'NLKNGuyen/papercolor-theme'
+" Plug 'luochen1990/rainbow'
+Plug 'frazrepo/vim-rainbow'
 call plug#end()
 
 " enable ncm2 for all buffers
@@ -146,3 +140,43 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
+
+" Coquille Bindings
+au FileType coq call coquille#FNMapping()
+map <buffer> <silent> <F6> :CoqLaunch -Q ../plf PLF<CR>15<C-w>>
+map <buffer> <silent> <F5> :CoqKill<CR>
+imap <buffer> <silent> <F6> <C-\><C-o>:CoqLaunch -Q ../plf PLF<CR>15<C-w>>
+imap <buffer> <silent> <F5> <C-\><C-o>:CoqKill<CR>
+
+" Set leader to space
+let mapleader = "\<Space>"
+
+" Nerd Commenter Stuff
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckALlLines = 1
+
+" Theming
+let g:airline_theme='nord_minimal'
+let g:rainbow_active=1
+set t_Co=256
+set termguicolors
+colorscheme nord
+set laststatus=2
+
+" Easy terminal access
+map <Leader>tt :20new term://zsh<CR>i
+
+set splitbelow splitright
+
+set guifont=FiraCode\ Nerd\ Font\ Mono
+
+lua << EOF
+require'lspconfig'.bashls.setup{}
+require'lspconfig'.clangd.setup{}
+require'lspconfig'.cmake.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+EOF
