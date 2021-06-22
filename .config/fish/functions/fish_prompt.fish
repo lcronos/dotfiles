@@ -1,0 +1,1 @@
+/home/kronos/.local/share/omf/themes/agnoster/fish_prompt.fish
